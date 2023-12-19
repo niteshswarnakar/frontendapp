@@ -54,7 +54,7 @@ const SigninPage = () => {
       localStorage.setItem("token", data.token);
       setIsLogged(true);
       navigate("/");
-      window.location.reload();
+      // window.location.reload();
     } catch (err) {
         console.log(err)
       setIsEmailNotFound(true);

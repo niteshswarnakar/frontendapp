@@ -28,7 +28,7 @@ const SurveyPage = () => {
       <Header />
         <div>SurveyPage</div>
         <ul>
-          {surveys.map((s) => {
+          {surveys.slice(0).reverse().map((s) => {
             return <li key = {s._id}><SurveyCard survey = {s} /></li>
           })}
         </ul>
